@@ -15,7 +15,7 @@ class LinearRegression:
     predicted_Y=np.dot(test_X, self.thetas)+self.theta0
     return predicted_Y
 
-  def fit(self, train_X, train_Y, learningRate=0.02, numOfIterations=2000, validation_X=None, validation_Y=None, printCost=True, storeCosts=True):
+  def fit(self, train_X, train_Y, learningRate=0.02, numOfIterations=2000, printCost=True, storeCosts=True):
 
     self.thetas=np.zeros((train_X.shape[1],1)) # all thetas from theta1, theta2,...thetaN where N is number of dimensions of each data item
     self.theta0=0.0 #theta0, i.e. the bias term
